@@ -21,18 +21,18 @@ struct NewsArticle: View {
             Text(siteName).italic()
             
             HStack(alignment: .center){
-                CachedAsyncImage(url: URL(string: imageUrl),
-                                 transaction: Transaction(animation: .easeInOut)) { phase in
-                    if let image = phase.image {
+                
+                AsyncImage(url: URL(string: imageUrl)){image in
                         image
                             .resizable()
                             .scaledToFit()
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
-                    else {
-                        Color.black.frame(width: 200, height: 100, alignment: .center)
+            placeholder:{
+                        ProgressView().frame(width: 200, height: 100, alignment: .center)
                     }
                 }
+             
             }
             
             Text(title)
@@ -45,7 +45,7 @@ struct NewsArticle: View {
                 .padding(8)
         }
     }
-}
+
 
 struct NewsArticle_Previews: PreviewProvider {
     static var previews: some View {

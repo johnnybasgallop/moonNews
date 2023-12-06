@@ -32,7 +32,7 @@ struct TitleBar : View {
         HStack{
             Text("Moon News").font(.custom("NicoMoji-Regular", size: 40))
             VStack{
-                Image("AppIcon")
+                Image("MoonMan")
                     .resizable()
                     .frame(width: 80, height: 80)
             }.offset(x: 12, y: 0)
