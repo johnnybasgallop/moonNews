@@ -10,7 +10,7 @@ import SwiftUI
 var deviceWidth: CGFloat = UIScreen.main.bounds.size.width
 
 struct ContentView: View {
-    @StateObject var data = SpaceAPI()
+    @StateObject var viewModel = MoonNewsViewModel()
     
     var body: some View {
         
@@ -18,9 +18,9 @@ struct ContentView: View {
                 TitleBar()
                 NewsView()
         }
-        .environmentObject(data)
+        .environmentObject(viewModel)
         .onAppear {
-            data.getData()
+            viewModel.fetchNews()
         }
     }
 }
