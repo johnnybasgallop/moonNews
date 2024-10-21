@@ -14,6 +14,7 @@
 		CAC0B54C2CC58E610095BAD3 /* MoonNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0B54B2CC58E610095BAD3 /* MoonNewsViewModel.swift */; };
 		CAC0B54F2CC58E910095BAD3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0B54E2CC58E910095BAD3 /* NetworkError.swift */; };
 		CAC0B5512CC58EE20095BAD3 /* SpaceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0B5502CC58EE20095BAD3 /* SpaceDataModel.swift */; };
+		CAC0B5572CC6C3CF0095BAD3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CAC0B5562CC6C3CF0095BAD3 /* PrivacyInfo.xcprivacy */; };
 		CAC5F5402A65FB4D00EB8DD4 /* Moon_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5F53F2A65FB4D00EB8DD4 /* Moon_NewsApp.swift */; };
 		CAC5F5422A65FB4D00EB8DD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5F5412A65FB4D00EB8DD4 /* ContentView.swift */; };
 		CAC5F5442A65FB4D00EB8DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC5F5432A65FB4D00EB8DD4 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		CAC0B54B2CC58E610095BAD3 /* MoonNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonNewsViewModel.swift; sourceTree = "<group>"; };
 		CAC0B54E2CC58E910095BAD3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		CAC0B5502CC58EE20095BAD3 /* SpaceDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDataModel.swift; sourceTree = "<group>"; };
+		CAC0B5562CC6C3CF0095BAD3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ../../../../Downloads/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		CAC5F53C2A65FB4D00EB8DD4 /* Moon News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moon News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC5F53F2A65FB4D00EB8DD4 /* Moon_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon_NewsApp.swift; sourceTree = "<group>"; };
 		CAC5F5412A65FB4D00EB8DD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		CAC5F53E2A65FB4D00EB8DD4 /* Moon News */ = {
 			isa = PBXGroup;
 			children = (
+				CAC0B5562CC6C3CF0095BAD3 /* PrivacyInfo.xcprivacy */,
 				CAC5F5582A660F1500EB8DD4 /* Moon-News-Info.plist */,
 				CA0352B12A68A6BB003C7078 /* Animations */,
 				CAC5F5592A67225A00EB8DD4 /* Fonts */,
@@ -209,6 +212,7 @@
 				CAC5F5472A65FB4E00EB8DD4 /* Preview Assets.xcassets in Resources */,
 				CAC5F55B2A67226800EB8DD4 /* NicoMoji-Regular.ttf in Resources */,
 				CAC5F5442A65FB4D00EB8DD4 /* Assets.xcassets in Resources */,
+				CAC0B5572CC6C3CF0095BAD3 /* PrivacyInfo.xcprivacy in Resources */,
 				CA0352B02A68A65B003C7078 /* AstronaoutAnim.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -339,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -364,8 +368,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,9 +378,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.basgallop.MoonNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -394,8 +403,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,9 +413,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.basgallop.MoonNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
