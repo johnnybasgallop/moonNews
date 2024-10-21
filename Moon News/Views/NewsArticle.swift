@@ -16,6 +16,7 @@ struct NewsArticle: View {
     let summary: String
     
     var body: some View {
+        
         VStack(alignment: .leading){
             
             Text(siteName).italic()
@@ -23,18 +24,15 @@ struct NewsArticle: View {
             HStack(alignment: .center){
                 
                 AsyncImage(url: URL(string: imageUrl)){image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
-                    }
-            placeholder:{
-                        ProgressView().frame(width: 200, height: 100, alignment: .center)
-                    }
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
-             
+            placeholder:{
+                ProgressView().frame(width: 200, height: 100, alignment: .center)
             }
-            
+            }
             Text(title)
                 .font(.headline)
                 .padding(8)
@@ -44,11 +42,14 @@ struct NewsArticle: View {
                 .font(.body)
                 .padding(8)
         }
-    }
-
-
-struct NewsArticle_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsArticle(title: "Code Palalce", imageUrl: "...", siteName: "CodePalaceNews", summary: "check out code palace because why not")
+        .padding(.vertical)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        
     }
 }
+
+
+#Preview{
+    NewsArticle(title: "SpaceX rocket launch", imageUrl: "https://worldsteel.org/wp-content/uploads/worldsteel-SPaceX-Falcon-Rocket-HR.jpg", siteName: "TheRocketNewsOutlet.com", summary: "Today the spacex rocket 114564 was finally launched after weeks of testing")
+}
+

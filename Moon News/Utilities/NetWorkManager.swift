@@ -2,14 +2,14 @@ import Foundation
 
 class NetworkManager {
     
-    private let baseURL = "https://api.spaceflightnewsapi.net/v4/articles"
+    private let baseURL = "https://api.spaceflightnewsapi.net/v4/articles?limit=15"
     
     static let shared = NetworkManager()
     
     private init() {}
     
-    func fetchSpaceArticles(limit: Int = 25, completion: @escaping (Result<[SpaceData], Error>) -> Void) {
-        guard let url = URL(string: "\(baseURL)?_limit=\(limit)") else {
+    func fetchSpaceArticles(completion: @escaping (Result<[SpaceData], Error>) -> Void) {
+        guard let url = URL(string: baseURL) else {
             completion(.failure(NetworkError.invalidURL))
             return
         }

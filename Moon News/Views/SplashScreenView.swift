@@ -32,7 +32,7 @@ struct SplashScreenView: View {
         }
         
         else {
-            ContentView()
+            ContentView().preferredColorScheme(.dark)
         }
     }
   

@@ -10,8 +10,6 @@ struct SpaceData: Codable, Identifiable {
     var publishedAt: String
     var updatedAt: String
     var featured: Bool
-    var launches: [String]
-    var events: [String]
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -23,10 +21,21 @@ struct SpaceData: Codable, Identifiable {
         case publishedAt = "published_at"
         case updatedAt = "updated_at"
         case featured
-        case launches
-        case events
     }
 }
+
+
+//struct previewExamples{
+//    static func examples() -> [SpaceData] {
+//        [
+//            SpaceData(id: 0, title: "Final SpaceX Launch", url: "", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3PDrso6tMje32sUxtZhbvrWpBrYgKUDa7w&s", newsSite: "TheRocketClub", summary: "This final spaceX launch represents a huge step not only for the company, but also for mankind", publishedAt: "24/10/23", updatedAt: "25/10/23", featured: false, launches: [""], events: [""]),
+//            SpaceData(id: 0, title: "Final SpaceX Launch", url: "", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3PDrso6tMje32sUxtZhbvrWpBrYgKUDa7w&s", newsSite: "TheRocketClub", summary: "This final spaceX launch represents a huge step not only for the company, but also for mankind", publishedAt: "24/10/23", updatedAt: "25/10/23", featured: false, launches: [""], events: [""]),
+//            SpaceData(id: 0, title: "Final SpaceX Launch", url: "", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3PDrso6tMje32sUxtZhbvrWpBrYgKUDa7w&s", newsSite: "TheRocketClub", summary: "This final spaceX launch represents a huge step not only for the company, but also for mankind", publishedAt: "24/10/23", updatedAt: "25/10/23", featured: false, launches: [""], events: [""]),
+//            SpaceData(id: 0, title: "Final SpaceX Launch", url: "", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3PDrso6tMje32sUxtZhbvrWpBrYgKUDa7w&s", newsSite: "TheRocketClub", summary: "This final spaceX launch represents a huge step not only for the company, but also for mankind", publishedAt: "24/10/23", updatedAt: "25/10/23", featured: false, launches: [""], events: [""]),
+//            SpaceData(id: 0, title: "Final SpaceX Launch", url: "", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3PDrso6tMje32sUxtZhbvrWpBrYgKUDa7w&s", newsSite: "TheRocketClub", summary: "This final spaceX launch represents a huge step not only for the company, but also for mankind", publishedAt: "24/10/23", updatedAt: "25/10/23", featured: false, launches: [""], events: [""])
+//        ]
+//    }
+//}
 
 // MARK: - Wrapper for API Response
 struct APIResponse: Codable {

@@ -13,7 +13,7 @@ struct NewsView: View {
     private var textWidth = 300.0
     
     var body: some View {
-        List {
+        List{
             ForEach(viewModel.news) { news in
                 
                     NewsArticle(title: news.title, imageUrl: news.imageUrl, siteName: news.newsSite, summary: news.summary)

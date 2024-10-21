@@ -11,7 +11,7 @@ import SwiftUI
 struct Moon_NewsApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            SplashScreenView().preferredColorScheme(.dark)
         }
     }
 }
